@@ -1528,7 +1528,12 @@ EGE_DEPRECATE(getchEx, "Please use the 'getch' function instead.")
 int     EGEAPI getchEx(int flag);
 EGE_DEPRECATE(kbhitEx, "Please use the 'kbhit' function instead.")
 int     EGEAPI kbhitEx(int flag);
+
 int     EGEAPI keystate(int key);
+int     EGEAPI keypress(int key);
+int     EGEAPI keyrelease(int key);
+int     EGEAPI keyrepeat(int key);
+
 void    EGEAPI flushkey();
 
 int     EGEAPI ege_getch();
